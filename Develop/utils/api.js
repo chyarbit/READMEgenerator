@@ -1,15 +1,18 @@
-const fs = require("fs");
+// require axios since we are going to call the gitHub API
 const axios = require("axios");
 
 const api = {
   getUser(username) {
-    const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;    
-    axios.get(queryUrl).then(function(response) {
-      var photo = response.data.avator_url;
-      var email = response.data.email;
-        return photo;
-        return email;
-  })
-}};
+    return axios
+      .get(
+        `https://api.github.com/users/${username}`
+      )
+      .catch(err => {
+        console.log(`User not found`);
+        console.log(err);
+        process.exit(1);
+      });
+  }
+};
 
 module.exports = api;
