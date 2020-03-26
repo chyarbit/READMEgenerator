@@ -1,10 +1,10 @@
 
-# a
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chyarbit/a)
+# ReadMe Generator
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chyarbit/readme-generator)
 
 ## Description
 
-
+This application will assist with developing a markdown file 
 
 ## Table of Contents 
 
@@ -25,12 +25,12 @@
 To install necessary dependencies, run the following command:
 
 ```
-
+npm i
 ```
 
 ## Usage
 
-
+It will take the inputs and create your readme
 
 ## License
 
@@ -38,14 +38,14 @@ This project is licensed under the MIT license.
   
 ## Contributing
 
-
+nothing
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-
+n/a
 ```
 
 ## Questions
